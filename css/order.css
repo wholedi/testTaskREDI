@@ -1,0 +1,289 @@
+.order__title {
+    max-width: 578px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: var(--order-title);
+    margin: 0 auto;
+    line-height: 115%;
+}
+
+.order__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.order__text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 131%;
+    color: var(--text-color);
+}
+
+.order__about > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.order__list {
+    border-radius: 20px;
+    background-color: var(--list);
+    padding: 31px 20px 38px 35px;
+}
+
+.order__item {
+    display: flex;
+    position: relative;
+    z-index: 11;
+    align-items: center;
+    gap: 17px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--item);
+    line-height: 115%;
+}
+
+.order__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.order__item::before {
+    content: "";
+    flex: 0 0 18px;
+    width: 18px;
+    height: 24px;
+    background-image: url("../image/order/black-paw.webp");
+}
+
+
+.order__decor {
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+}
+
+.order__form {
+    position: relative;
+    padding: 27px 20px 20px 20px;
+    box-shadow: 0 4px 4px 0 var(--box-shadow);
+    background-color: var(--form);
+    border-radius: 10px;
+}
+
+.form__header {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__decor {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form__title {
+    font-size: 33px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.form__title,
+.time,
+.prise__number,
+.prise__number--new {
+    font-weight: 700;
+}
+
+.form__time {
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 36px;
+    color: var(--card);
+}
+
+.prise__number--old {
+    position: relative;
+    font-size: 30px;
+    color: var(--number);
+}
+
+.prise__number--old::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    width: 100%;
+    height: 2px;
+    background-color: var(--line);
+}
+
+.prise__number--new {
+    font-size: 36px;
+}
+
+.prise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    margin-bottom: 20px;
+}
+
+.form__wrapper {
+    margin-bottom: 5px;
+}
+
+.form__wrapper > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.form__input {
+    border-radius: 30px;
+    background-color: var(--lite-gray);
+    padding: 16px 16px 16px 62px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--silver);
+}
+
+.form__input::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--silver);
+}
+
+.form__input-wrapper {
+    position: relative;
+}
+
+.form__input-wrapper::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    content: "";
+    width: 26px;
+    height: 27px;
+    background-image: url("../image/order/gray-paw.webp");
+}
+
+.form__button {
+    position: relative;
+    z-index: 9;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white);
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--dark-green);
+    margin-bottom: 30px;
+}
+
+.data {
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-silver);
+    text-shadow: 0 4px 4px var(--box-shadow);
+}
+
+@media (min-width: 640px) {
+    .order__content {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .order__about {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .order__form {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .order__decor {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        margin: 0 auto;
+    }
+
+    .order__text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .order__text {
+        max-width: 401px;
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .order__list {
+        max-width: 323px;
+    }
+}
+
+@media (min-width: 991px) {
+    .order__content {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .order__title {
+        font-size: 52px;
+        max-width: 578px;
+    }
+
+    .order__decor {
+        max-width: 550px;
+        margin-top: 41px;
+        margin-left: -225px;
+        margin-right: -131px;
+    }
+
+    .order__about {
+        margin-top: 39px;
+    }
+
+    .order__about > *:not(:last-child) {
+        margin-bottom: 67px;
+    }
+
+    .order__form {
+        max-width: 269px;
+        margin-top: 58px;
+    }
+
+    .form__header {
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .order__decor {
+        max-width: 100%;
+        margin-top: 59px;
+    }
+}
+
+

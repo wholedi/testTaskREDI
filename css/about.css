@@ -1,0 +1,157 @@
+.about {
+    position: relative;
+    padding: 50px 0;
+}
+
+.about__bg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about__block-paw {
+    display: flex;
+    gap: 10px;
+}
+
+.about__paw {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.about__paw--104-45 {
+    padding: 104px 0 45px 0;
+}
+
+.about__paw--52-97 {
+    padding: 52px 0 97px 0;
+}
+
+.about__img-paw {
+    max-height: 30px;
+    max-width: 40px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    background: var(--about-title);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about__block-card {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about__card {
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 0 var(--box-shadow);
+    background-color: var(--card);
+    padding: 17px 16px;
+    text-align: center;
+    min-height: 439px;
+}
+
+.about__info-card {
+    border-radius: 20px;
+    background: var(--green);
+    padding: 20px 16px;
+    min-height: 218px;
+}
+
+.about__info-card > *:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.about__title-card {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--white);
+    text-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.about__img-card--mt {
+    margin-top: -19px;
+}
+
+.about__img-card--mb {
+    margin-bottom: 6px;
+}
+
+.about__img-card--natural {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 550px) {
+    .about__block-paw {
+        gap: 50px;
+    }
+
+    .about__img-paw {
+        max-height: 40px;
+        max-width: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about__block-card {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about__block-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1190px) {
+    .about {
+        padding: 100px;
+    }
+
+    .about__bg-container {
+        gap: 84px
+    }
+
+    .about__block-paw {
+        gap: 130px;
+    }
+
+    .about__paw {
+        gap: 84px
+    }
+
+    .about__img-paw {
+        max-height: 90px;
+        max-width: 100%;
+    }
+
+    .about__title {
+        font-size: 52px;
+        margin-bottom: 65px;
+    }
+
+    .about__block-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1250px) {
+    .about__block-card {
+        gap: 84px;
+    }
+}
+

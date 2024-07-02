@@ -1,0 +1,31 @@
+:root {
+    --white: #ffffff;
+    --form: #fdfcfc;
+    --text-color: #f6f7e4;
+    --item: #dfe4de;
+    --lite-gray: #f3efef;
+
+    --card: #f6e791;
+    --order-title: #f9e994;
+    --line: #F6BE91;
+    --list: #7fb3e1;
+
+    --decor: #d4df6d;
+    --dark-green: #a1d337;
+    --green-title: #537d13;
+    --link-hover: #5e792d;
+    --green: rgba(161, 211, 55, 0.4);
+    --link: #715d00;
+    --main-text-color: #483c08;
+
+    --gray: #c2baba;
+    --silver: #777;
+    --number: #6b6b6b;
+    --dark-silver: #444;
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --black: rgba(0, 0, 0, 0.3);
+
+
+    --about-title: linear-gradient(180deg, #f9e994 0%, #537d13 56.25%, #483c08 100%);
+    --background-results: linear-gradient(180deg, #e1edf8 0%, rgba(127, 179, 225, 0) 59.38%, rgba(0, 0, 0, 0.25) 100%);
+}

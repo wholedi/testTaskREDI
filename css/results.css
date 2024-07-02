@@ -1,0 +1,85 @@
+.results {
+    position: relative;
+    padding-top: 106px;
+    padding-bottom: 197px;
+    background: var(--background-results);
+}
+
+.results::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 175px;
+    background-image: url("../image/results/grass.webp");
+    background-size: cover;
+
+}
+
+.results__img {
+    position: relative;
+    z-index: 5;
+    max-width: 100%;
+}
+
+.results__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: var(--green-title);
+    margin-bottom: 65px;
+}
+
+.results__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.decor {
+    position: relative;
+    max-width: 670px;
+    border: 10px solid var(--decor);
+    text-align: center;
+    border-radius: 10px;
+    padding: 21px 0 24px 20px;
+}
+
+@media (min-width: 768px) {
+    .results__title {
+        font-size: 52px;
+    }
+
+    .decor {
+        text-align: left;
+        border: 20px solid var(--decor);
+        border-right: none;
+        margin-right: 100px;
+    }
+
+    .decor::before,
+    .decor::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 20px;
+        height: 63%;
+        border-radius: 10px;
+        background-color: var(--decor);
+    }
+
+    .decor::before {
+        top: -15px;
+        transform-origin: top left;
+        transform: rotate(-26deg);
+    }
+
+    .decor::after {
+        bottom: -15px;
+        transform-origin: bottom right;
+        transform: rotate(26deg);
+    }
+}
